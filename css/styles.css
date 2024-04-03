@@ -230,8 +230,7 @@ box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
     background: #f4f4fd;
     padding-top: 96px;
     padding-bottom: 96px;
-    /* padding-top: 120px;
-    padding-bottom: 120px; */
+   
 }
 
 .team-title {
@@ -243,9 +242,6 @@ box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
     flex-direction: column;
     align-items: center;
     gap: 72px;
-   
-    /* display: flex;
-   gap: 24px; */
    
 }
 
@@ -316,8 +312,10 @@ box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
 
 
 .portfolio {
-    padding-top: 120px;
-     padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+ 
+   
 }
 
 .portfolio-title {
@@ -331,13 +329,14 @@ box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
 
 .portfolio-list {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
+    flex-direction: column;
+    gap: 48px;
+    margin: 0 auto;
+    
 }
 
 .portfolio-itm {
-    width: calc((100% - 2 * 24px) / 3);
+   max-width: 288px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -359,6 +358,7 @@ transform: translateY(0);
  .portfolio-cover-wrap{
     position: relative;
     overflow: hidden;
+  
  }
 
  .portfolio-wrap{
@@ -368,6 +368,7 @@ transform: translateY(0);
     padding: 32px 16px;
     width: 360px;
     height: 120px;
+   max-width: 288px;
 }
    
 
@@ -397,12 +398,18 @@ transform: translateY(0);
 
 
 .footer {
-    background: #2e2f42;  
-    padding-bottom: 100px;
-    padding-top: 100px;
+    background: #2e2f42; 
+    padding-top: 96px;
+    padding-bottom: 96px; 
+    
 }
-.footer-top{
+.footer-container{
     display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    
+    
+    justify-content: center;
     
 }
 .footer-logo{
@@ -413,8 +420,13 @@ transform: translateY(0);
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        display: inline-block;
+       
+        align-items: center;
         margin-bottom: 16px;
+        display: block;
+        text-align: center;
+
+       
 }
 
 .logo-footer-part{
@@ -427,19 +439,23 @@ transform: translateY(0);
 }
 
 .footer-container{
+    
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;  
     
 }
 
 .footer-wrap{
-    margin-right: 120px;
+    max-width: 288px;
+    margin-bottom: 72px;
+   
 }
 
 .footer-icon-wrap{
     width: 208px;
     height: 80px;
-    margin-right: 80px;
+    margin-bottom: 72px;
+   
 }
 
 .footer-icon-text{
@@ -449,6 +465,9 @@ transform: translateY(0);
         letter-spacing: 0.02em;
         color: #fff;
         margin-bottom: 16px;
+        text-align: center;
+
+           
 }
 
 .footer-contact-list{
@@ -480,7 +499,7 @@ transform: translateY(0);
 .footer-input{
         border: 1px solid #fff;
         border-radius: 4px;
-        width: 264px;
+        width: 288px;
         height: 40px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background-color: transparent;
@@ -489,6 +508,7 @@ transform: translateY(0);
         line-height: 2;
         letter-spacing: 0.04em;
         color: #ffffff;
+        opacity: 0.3;
 }
 
 .footer-input::placeholder{
@@ -506,19 +526,20 @@ transform: translateY(0);
     color: #fff;
     border-radius: 4px;
     padding: 8px 24px;
-    min-width: 165px;
+    width: 165px;
     height: 40px;
     background: #4d5ae5; 
     border: none;
     display: flex;
     gap: 16px;
-    align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .footer-form{
  display: flex;
+ flex-direction: column;
  gap: 24px;
 
 }
@@ -526,7 +547,7 @@ transform: translateY(0);
 
 .footer-icon-btn{
     fill: #fff;
-    margin-left: 16px;
+   
 }
 /* ======================================== */
 /* ===================MODAL================ */
@@ -894,7 +915,54 @@ margin: 0 auto;
 max-width: 264px;
 width: calc((100% - 1 * 24px) / 2);
 }
+
+/* ======================================== */
+/* ===============PORTFOLIO================ */
+
+.portfolio-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    margin: 0 auto;
 }
+.portfolio-itm {
+    max-width: 356px;
+    width: calc((100% - 1 * 24px) / 2);
+}
+
+.portfolio-wrap {
+    max-width: 356px;
+}
+/* ========================================= */
+/* ================FOOTER=================== */
+
+.footer-container {
+    justify-content: left;
+    width: 584px;
+}
+
+.footer-logo{
+text-align: left;
+}
+.footer-icon-text{
+   text-align: left; 
+   
+}
+
+.footer-form{
+    flex-direction: row;
+}
+
+.footer-input{
+   max-width: 264px; 
+}
+
+.footer-wrap {
+    width: 264px;
+    margin-right: 24px;
+}
+}
+
 /* =================1158px====================== */
 
 
@@ -937,7 +1005,7 @@ width: calc((100% - 1 * 24px) / 2);
 .features-list {
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 24px;
+    gap: 0;
 }
 
 .features {
@@ -987,6 +1055,56 @@ width: calc((100% - 1 * 24px) / 2);
     margin: 0 auto;
 }
 
+/* ======================================== */
+/* ===============PORTFOLIO================ */
+
+.portfolio{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-itm {
+    max-width: 360px;
+    width: calc((100% - 2 * 24px) / 3);
+}
+
+.portfolio-wrap {
+    max-width: 360px;
+}
+
+/* ========================================= */
+/* ================FOOTER=================== */
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    justify-content: flex-start;
+    gap: 0;
+   
+}
+.footer {
+    padding-bottom: 100px;
+    padding-top: 100px
+}
+
+.footer-wrap {
+  max-width: 264px;
+margin-right: 120px;
+}
+.footer-icon-wrap {
+    margin-right: 80px;
+}
+.footer-subscribe-btn {
+min-width: 165px;
+}
 }
 
 
