@@ -110,11 +110,11 @@ box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
 .address{
     display: none;
     font-style: normal;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-        margin-left: auto;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin-left: auto;
 }
 
 .address-list{
@@ -175,6 +175,9 @@ box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
+.mob-studio-link{
+    color: #404bbf;
+}
 
 
 .mob-address-list {
@@ -187,8 +190,13 @@ box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    font-style: normal;
     color: #434455;
 }
+.mob-tel-link{
+    color: #4d5ae5;
+}
+
 .mob-contact-list {
     display: flex;
     gap: 40px;
@@ -209,7 +217,7 @@ box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: o auto;
+    margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
      url(../images/main-mob-1x.jpg);
            
@@ -270,6 +278,8 @@ box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
 
 .features-list {
     flex-direction: column;
+    display: flex;
+    gap: 72px;
 }
 
 
@@ -285,7 +295,7 @@ box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
 .features-itm-text {
     font-weight: 500;
     color: #434455;
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
 }
 
 .features-icon-wrap{
@@ -436,11 +446,6 @@ transform: translateY(0);
 }
    
 
-.features-list{
-    display: flex;
-    gap: 24px;
-}
-
 .portfolio-cover-text{
         position: absolute;
         top: 0;
@@ -505,20 +510,20 @@ transform: translateY(0);
 .footer-container{
     
     display: flex;
+    gap: 72px;
     flex-wrap: wrap;  
     
 }
 
 .footer-wrap{
     max-width: 288px;
-    margin-bottom: 72px;
    
 }
 
 .footer-icon-wrap{
     width: 208px;
     height: 80px;
-    margin-bottom: 72px;
+   
    
 }
 
@@ -1012,8 +1017,11 @@ width: calc((100% - 1 * 24px) / 2);
 /* ================FOOTER=================== */
 
 .footer-container {
+    
     justify-content: left;
     width: 584px;
+    flex-wrap: wrap;
+    gap: 72px 24px;
 }
 
 .footer-logo{
@@ -1034,7 +1042,7 @@ text-align: left;
 
 .footer-wrap {
     width: 264px;
-    margin-right: 24px;
+   
 }
 
 /* ======================================== */
@@ -1190,7 +1198,7 @@ text-align: left;
 
 .footer-wrap {
   max-width: 264px;
-margin-right: 120px;
+  margin-right: 120px;
 }
 .footer-icon-wrap {
     margin-right: 80px;
